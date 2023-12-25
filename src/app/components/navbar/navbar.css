@@ -1,0 +1,26 @@
+.Logo_Kaiser {
+	max-width: 70px;
+}
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #000;
+	transition: color 0.3s; /* Transición de color */
+}
+
+.menu li a:hover {
+	color: blue; /* Color de enlace en el hover */
+}
+
+html {
+	scroll-behavior: smooth; /* Suaviza el desplazamiento */
+}
+
+.logo_brand {
+	max-width: 50px;
+}
