@@ -15,9 +15,9 @@ const SectionServicios = () => {
 				</p>
 			</div>
 			<div className="columns-3 seccion-cards">
-				<CardServices title="Desarrollo de Software" description="Desarrollamos software a medida para resolver problemas específicos de nuestros clientes." image="illustraciones/software.jpg"></CardServices>
-				<CardServices title="Diseño de Páginas Web" description="Diseñamos páginas web para que su empresa tenga presencia en internet." image="illustraciones/web.jpg"></CardServices>
-				<CardServices title="Desarrollo de Aplicaciones Móviles" description="Desarrollamos aplicaciones móviles para que su empresa tenga presencia en dispositivos móviles." image="illustraciones/mobileapp.jpg"></CardServices>
+				<CardServices title="Desarrollo de Software" description="Desarrollamos software a medida para resolver problemas específicos de nuestros clientes." image="illustraciones/software.webp"></CardServices>
+				<CardServices title="Diseño de Páginas Web" description="Diseñamos páginas web para que su empresa tenga presencia en internet." image="illustraciones/web.webp"></CardServices>
+				<CardServices title="Desarrollo de Aplicaciones Móviles" description="Desarrollamos aplicaciones móviles para que su empresa tenga presencia en dispositivos móviles." image="illustraciones/mobileapp.webp"></CardServices>
 			</div>
 		</section>
 	);

@@ -25,7 +25,7 @@ const SectionContacto = () => {
 						</div>
 					</div>
 					<div>
-						<img src="illustraciones/Contact us-bro.png" alt="Contact Illustration" className="w-full h-auto" />
+						<img src="illustraciones/Contact-us-bro.webp" alt="Contact Illustration" className="w-full h-auto" />
 					</div>
 				</div>
 			</div>

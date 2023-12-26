@@ -11,7 +11,10 @@ function Card({ title, description, image }: card) {
 	return (
 		<div className="card w-96 bg-base-100 md:shadow-xl flex flex-col">
 			<figure className="px-10 pt-10 h-56 flex justify-center items-center">
-				<img src={image} alt={title} className="rounded-xl object-cover h-full" />
+				<video autoPlay loop muted preload="auto">
+					<source src={image} type="video/webm" />
+					Tu navegador no soporta el elemento de video.
+				</video>
 			</figure>
 			<div className="card-body flex flex-col">
 				<h2 className="card-title text-lg font-bold h-12 mb-2 titulo_kaiser">{title}</h2>
