@@ -19,30 +19,26 @@
 }
 
 /* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@media (prefers-color-scheme: light) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 } */
 
 body {
 	font-family: "Figtree";
 	/* font-family: 'Tajawal', sans-serif !important; */
 	scroll-behavior: smooth;
-	/* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+
+	/* background-image: linear-gradient(to right, #aba4ff 0%, #d3d4db 100%); */
+	/* background-image: linear-gradient(to right, #5a3f7c 0%, #2a1e4f 100%); */
 }
 .seccion-cards {
 	display: flex;
@@ -104,4 +100,52 @@ body {
 	font-weight: 600;
 	/* line-height: 1.2; */
 	/* letter-spacing: -0.05em; */
+}
+.bg-about-us {
+	background-image: url("../../public/illustraciones/bg-1.png");
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	height: 100vh;
+	z-index: -1;
+	filter: blur(64px);
+}
+.bg-description {
+	background-image: url("../../public/illustraciones/bg-2.png");
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	height: 100vh;
+	z-index: -1;
+	filter: blur(64px);
+}
+.bg-ubicacion {
+	background-image: url("../../public/illustraciones/bg-3.png");
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	height: 100vh;
+	z-index: -1;
+	filter: blur(64px);
+}
+.bg-contacto {
+	background-image: url("../../public/illustraciones/bg-4.png");
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	height: 100vh;
+	z-index: -1;
+	filter: blur(64px);
 }

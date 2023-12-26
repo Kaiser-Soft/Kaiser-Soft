@@ -9,25 +9,14 @@ import { PowerGlitch } from "powerglitch";
 
 const optionsText = {
 	reverse: true, // reverse the tilt direction
-	max: 10, // max tilt rotation (degrees)
+	max: 20, // max tilt rotation (degrees)
 	perspective: 3000, // Transform perspective, the lower the more extreme the tilt gets.
-	scale: 1, // 2 = 200%, 1.5 = 150%, etc..
+	scale: 1.2, // 2 = 200%, 1.5 = 150%, etc..
 	speed: 1000, // Speed of the enter/exit transition
 	transition: true, // Set a transition on enter/exit.
 	axis: null, // What axis should be disabled. Can be X or Y.
 	reset: true, // If the tilt effect has to be reset on exit.
 	easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
-};
-const optionsImage = {
-	reverse: true, // Mantener la dirección de inclinación predeterminada
-	max: 10, // Máximo ángulo de inclinación muy bajo, prácticamente imperceptible
-	perspective: 3000, // Aumentar el valor de la perspectiva para disminuir el efecto
-	scale: 1, // Escala muy sutilmente mayor para apenas notar el cambio
-	speed: 300, // Velocidad de la transición más lenta para suavizar el efecto
-	transition: true, // Mantener la transición en la entrada y salida
-	axis: null, // No restringir la inclinación a un solo eje
-	reset: true, // Restablecer la posición al estado original cuando el mouse sale
-	easing: "cubic-bezier(0.26, 0.46, 0.45, 0.94)", // Suavizar la animación de la transición
 };
 
 const Hero = () => {
@@ -48,7 +37,7 @@ const Hero = () => {
 			});
 		}
 		setTextHero("Kaiser Soft");
-		setDescripcion("Somos una empresa pequeña y dinámica, enfocada en las tecnologías emergentes para el desarrollo de software, que brinde soluciones innovadoras a problemas simples que aquejen a nuestros clientes.");
+		// setDescripcion("Somos una empresa pequeña y dinámica, enfocada en las tecnologías emergentes para el desarrollo de software, que brinde soluciones innovadoras a problemas simples que aquejen a nuestros clientes.");
 	};
 
 	const onMouseOverText2 = () => {
@@ -59,7 +48,7 @@ const Hero = () => {
 			}, 1);
 		}
 		setTextHero("Desarrollo de Software");
-		setDescripcion("Desarrollamos software a medida para resolver problemas específicos de nuestros clientes.");
+		// setDescripcion("Desarrollamos software a medida para resolver problemas específicos de nuestros clientes.");
 	};
 	const onMouseLeaveButtonTextHero = () => {
 		if (titulo_hero.current) {
@@ -74,27 +63,30 @@ const Hero = () => {
 	return (
 		<section>
 			<div className="side-shadows">
-				<Tilt options={optionsImage}>
-					<div className="hero min-h-screen">
-						<div className="hero-overlay "></div>
-						<div className="hero-content text-center text-neutral-content flex-col">
+				{/* <Tilt options={optionsImage}> */}
+				<div className="hero min-h-screen">
+					<div className="bg-inicio"></div>
+					<div className="hero-overlay "></div>
+					<div className="hero-content text-center text-neutral-content flex-col">
+						<Tilt options={optionsText}>
 							<div ref={titulo_hero}>
-								<h1 className="titulo_kaiser mb-5 text-4xl md:text-9xl hero-text">{textHero}</h1>
+								<h1 className="mb-5 text-4xl md:text-9xl hero-text texto-kaiser ">{textHero}</h1>
 							</div>
-							<div className="max-w-xl">
-								<p className="mb-5 animate__animated animate__fadeIn">{descripcion}</p>
-								<div className="">
-									<a className="btn btn-primary mr-3" href="#sobre-nosotros" onMouseOver={onMouseOverText1}>
-										Acerca de Nosotros
-									</a>
-									<a className="btn btn-secondary" href="#contacto" onMouseOver={onMouseOverText2}>
-										Contáctanos
-									</a>
-								</div>
+						</Tilt>
+						<div className="max-w-xl">
+							{/* <p className="mb-5 animate__animated animate__fadeIn">{descripcion}</p> */}
+							<div className="">
+								<a className="btn btn-primary mr-3" href="#sobre-nosotros" onMouseOver={onMouseOverText1}>
+									Acerca de Nosotros
+								</a>
+								<a className="btn btn-secondary" href="#contacto" onMouseOver={onMouseOverText2}>
+									Contáctanos
+								</a>
 							</div>
 						</div>
 					</div>
-				</Tilt>
+				</div>
+				{/* </Tilt> */}
 			</div>
 		</section>
 

@@ -12,7 +12,7 @@ const Navbar = () => {
 		}
 	};
 	return (
-		<div className="navbar bg-base-100">
+		<div className="navbar sticky top-0 z-[2] ">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,14 +35,14 @@ const Navbar = () => {
 						</li>
 					</ul>
 				</div>
-				<a className="btn btn-ghost text-xl flex items-center align-middle">
+				<a href="#" className="btn btn-ghost text-xl flex items-center align-middle">
 					<img src="logos_kaiser/KaiserHD.webp" alt="Logo Kaiser Soft" className="logo_brand" />
 					Kaiser Soft
 				</a>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">
-					<li>
+					<li className="active">
 						<a href="#sobre-nosotros">Sobre Nosotros</a>
 					</li>
 					<li>

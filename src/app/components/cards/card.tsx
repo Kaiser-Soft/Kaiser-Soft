@@ -9,7 +9,7 @@ interface card {
 
 function Card({ title, description, image }: card) {
 	return (
-		<div className="card w-96 bg-base-100 shadow-xl flex flex-col">
+		<div className="card w-96 bg-base-100 md:shadow-xl flex flex-col">
 			<figure className="px-10 pt-10 h-56 flex justify-center items-center">
 				<img src={image} alt={title} className="rounded-xl object-cover h-full" />
 			</figure>
