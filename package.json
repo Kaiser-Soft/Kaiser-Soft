@@ -20,6 +20,7 @@
     "eslint-config-next": "^12.0.4",
     "mapbox-gl": "^2.15.0",
     "next": "13.4.7",
+    "next-intl": "^3.12.0",
     "postcss": "8.4.24",
     "powerglitch": "^2.3.2",
     "react": "18.2.0",

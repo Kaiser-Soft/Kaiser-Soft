@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import Footer from "./components/footer/footer";
@@ -18,7 +17,7 @@ export default function Home() {
 		<>
 			<Navbar></Navbar>
 			<Hero></Hero>
-			<main className="flex min-h-screen flex-col justify-between">
+			<main>
 				<SectionAboutUs></SectionAboutUs>
 				<SectionDescription></SectionDescription>
 				<SectionServicios></SectionServicios>
