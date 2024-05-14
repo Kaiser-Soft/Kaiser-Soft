@@ -20,7 +20,7 @@ const Navbar = () => {
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
 						</svg>
 					</div>
-					<ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+					<ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white">
 						<li>
 							<a href="#sobre-nosotros">Sobre Nosotros</a>
 						</li>
@@ -35,13 +35,13 @@ const Navbar = () => {
 						</li>
 					</ul>
 				</div>
-				<a href="#" className="btn btn-ghost text-xl flex items-center align-middle">
-					<img src="logos_kaiser/KaiserHD.webp" alt="Logo Kaiser Soft" className="logo_brand" />
+				<a href="#" className="btn btn-ghost text-xl flex items-center align-middle text-white">
+					<img src="logos_kaiser/KaiserLogo.svg" alt="Logo Kaiser Soft" className="logo_brand" />
 					Kaiser Soft
 				</a>
 			</div>
 			<div className="navbar-center hidden lg:flex">
-				<ul className="menu menu-horizontal px-1">
+				<ul className="menu menu-horizontal px-1 text-white">
 					<li className="active">
 						<a href="#sobre-nosotros">Sobre Nosotros</a>
 					</li>
