@@ -1,24 +1,20 @@
 "use client";
 import "./card.css";
-import Image from "next/image";
 interface card {
 	title: string;
 	description: string;
 	image: string;
 }
-
+import "./card.css";
 function Card({ title, description, image }: card) {
 	return (
-		<div className="card w-96 bg-base-100 md:shadow-xl flex flex-col">
+		<div className="card w-96 md:shadow-xl flex flex-col">
 			<figure className="px-10 pt-10 h-56 flex justify-center items-center">
-				<video autoPlay loop muted preload="auto">
-					<source src={image} type="video/webm" />
-					Tu navegador no soporta el elemento de video.
-				</video>
+				<img src={image} alt={title} className="max-w-full h-40 object-cover"></img>
 			</figure>
-			<div className="card-body flex flex-col">
-				<h2 className="card-title text-lg font-bold h-12 mb-2 titulo_kaiser">{title}</h2>
-				<p className="flex-grow text-md">{description}</p>
+			<div className="card-body flex flex-col justify-center">
+				<h2 className="text-[30px] font-bold h-12 mb-2 titulo_kaiser text-center">{title}</h2>
+				<p className="flex-grow text-md text-white text-[18px]">{description}</p>
 			</div>
 		</div>
 	);

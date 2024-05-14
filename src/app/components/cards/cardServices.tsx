@@ -3,6 +3,8 @@ interface CardServicesProps {
 	description: string;
 	image: string;
 }
+
+import "./card.css";
 const CardServices = ({ title, description, image }: CardServicesProps) => {
 	return (
 		<div className="card w-96  shadow-xl image-full">

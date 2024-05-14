@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Fitgree";
+	src: url("../../../public/Fonts/Figtree/static/Figtree-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Fitgree-Bold";
+	src: url("../../../public/Fonts/Figtree/static/Figtree-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* :root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+} */
+
+body {
+	font-family: "Figtree", sans-serif; /* Asegúrate de que Figtree soporte caídas a sans-serif en caso de que no se cargue */
+	scroll-behavior: smooth;
+	background-color: hsla(0, 0%, 0%, 1);
+	background-image: radial-gradient(at 91% 95%, hsla(272, 80%, 22%, 1) 0px, transparent 50%), radial-gradient(at 0% 17%, hsla(282, 100%, 10%, 1) 0px, transparent 50%);
+}
+.seccion-cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: 200;
+	gap: 2rem;
+}
+
+.titulo_kaiser {
+	background: linear-gradient(270deg, #f78573, #9721da);
+	background-size: 400% 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradientAnimation 5s infinite !important;
+}
+/* .texto-kaiser:hover{
+  background-image: linear-gradient(90deg, rgb(114, 247, 229) 0%, rgba(151, 33, 218, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: gradientAnimation 5s infinite !important;
+} */
+@-webkit-keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.h2_font {
+	font-size: 2rem;
+	font-weight: 600;
+	/* line-height: 1.2; */
+	/* letter-spacing: -0.05em; */
+}
+.bg-about-us {
+	background-image: url("../../../public/illustraciones/bg-1.webp");
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	height: 100vh;
+	z-index: -1;
+	filter: blur(64px);
+}
+.bg-description {
+	background-image: url("../../../public/illustraciones/bg-2.webp");
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	height: 100vh;
+	z-index: -1;
+	filter: blur(64px);
+}
+.bg-ubicacion {
+	background-image: url("../../../public/illustraciones/bg-3.webp");
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	height: 100vh;
+	z-index: -1;
+	filter: blur(64px);
+}
+.bg-contacto {
+	background-image: url("../../../public/illustraciones/bg-4.webp");
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	height: 100vh;
+	z-index: -1;
+	filter: blur(64px);
+}
