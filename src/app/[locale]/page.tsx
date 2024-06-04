@@ -12,6 +12,7 @@ import React from "react";
 import SectionUbicacion from "../components/sections/sectionUbicacion";
 import SectionContacto from "../components/sections/sectionContacto";
 import SectionTechs from "../components/sections/sectionTechs";
+import SectionTeam from "../components/sections/sectionTeam";
 
 export default function Home() {
 	return (
@@ -23,6 +24,7 @@ export default function Home() {
 				<SectionTechs />
 				<SectionDescription></SectionDescription>
 				<SectionServicios></SectionServicios>
+				<SectionTeam></SectionTeam>
 				<SectionUbicacion></SectionUbicacion>
 				<SectionContacto></SectionContacto>
 			</main>

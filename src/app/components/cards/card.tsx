@@ -5,7 +5,7 @@ interface card {
 	description: string;
 	image: string;
 }
-import "./card.css";
+
 function Card({ title, description, image }: card) {
 	return (
 		<div className="card w-96 md:shadow-xl flex flex-col">
