@@ -20,10 +20,10 @@ export default function Home() {
 			<Navbar></Navbar>
 			<Hero></Hero>
 			<main>
-				<SectionAboutUs></SectionAboutUs>
-				<SectionTechs />
 				<SectionDescription></SectionDescription>
 				<SectionServicios></SectionServicios>
+				<SectionTechs />
+				<SectionAboutUs></SectionAboutUs>
 				<SectionTeam></SectionTeam>
 				<SectionUbicacion></SectionUbicacion>
 				<SectionContacto></SectionContacto>

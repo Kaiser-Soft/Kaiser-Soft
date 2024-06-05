@@ -21,10 +21,10 @@ const Hero = () => {
 				</div>
 				<div className="flex-1">
 					<h1 className="text-[28px] lg:text-[55px] font-bold text-white text-wrap">
-						Innovación y Calidad en <br></br>
+						Liderando la Innovación y Calidad en <br></br>
 						<span className="titulo_kaiser">Desarrollo de Software</span>
 					</h1>
-					<p className="py-6 text-white">En Kaiser Soft, combinamos pasión y experiencia para impulsar la transformación digital. Somos una startup dinámica especializada en las últimas tecnologías, dedicada a ofrecer soluciones creativas y efectivas que resuelven los retos de nuestros clientes.</p>
+					<p className="py-6 text-white text-[30px]">En Kaiser Soft, nos dedicamos a impulsar tu empresa hacia nuevas oportunidades.</p>
 					<button className="btn btn-primary">Descubre Más</button>
 				</div>
 			</div>
