@@ -22,7 +22,7 @@ const SectionContacto = () => {
 						</div>
 					</div>
 					<div>
-						<img src="illustraciones/Contact-us-bro.webp" alt="Contact Illustration" className="w-full h-auto shadow-lg rounded-lg" />
+						<img src="illustraciones/Contact-us-bro.webp" alt="Contact Illustration" className="w-full h-auto rounded-lg" />
 					</div>
 				</div>
 			</div>

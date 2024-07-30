@@ -5,7 +5,7 @@ const people = [
 		name: "Leonardo Ramirez",
 		role: "Ingeniero de Sistemas / Desarrollador de Software / Co-Founder / CEO",
 		description: "Leonardo es un apasionado de la tecnología y la innovación. Con más de 10 años de experiencia en el desarrollo de software, ha liderado proyectos de gran envergadura en empresas de renombre.",
-		imageUrl: "https://media.licdn.com/dms/image/D4E03AQGGC2YKuKNm1Q/profile-displayphoto-shrink_800_800/0/1710731219105?e=1723075200&v=beta&t=LiOoAkfZRpB7144SomyWykwNQnz8CO1XnpBx_E5752I",
+		imageUrl: "https://media.licdn.com/dms/image/D4E03AQE6kpJpIhEdKA/profile-displayphoto-shrink_800_800/0/1720399879602?e=1727913600&v=beta&t=g8KvwFT-tQq8JgeL7hX-lHjhR_Ibf4ReSo_DPzXyCnQ",
 		linkedin: "https://www.linkedin.com/in/leonardo-ramirez-7b1b3b1b/",
 	},
 	{
