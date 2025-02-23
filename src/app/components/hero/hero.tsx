@@ -5,27 +5,21 @@ import { Tilt } from "react-tilt";
 
 const Hero = () => {
 	return (
-		<div className="hero min-h-screen">
-			<div className="hero-content flex-col lg:flex-row-reverse justify-center items-center">
-				<div className="flex-1 justify-center items-center">
-					<Tilt className="Tilt" options={{ max: 25, scale: 1.05 }}>
-						<img
-							src="./illustraciones/code.png"
-							style={{
-								width: "100%",
-								maxWidth: "600px",
-							}}
-							alt="Logo Kaiser Soft"
-						/>
+		<div className='hero min-h-screen px-4'>
+			<div className='hero-content flex-col lg:flex-row-reverse justify-center items-center gap-8'>
+				<div className='flex-1 justify-center items-center max-w-[600px] w-full'>
+					<Tilt className='Tilt' options={{ max: 25, scale: 1.05 }}>
+						<img src='./illustraciones/code.png' className='w-full h-auto' alt='Logo Kaiser Soft' />
 					</Tilt>
 				</div>
-				<div className="flex-1">
-					<h1 className="text-[28px] lg:text-[55px] font-bold text-white text-wrap">
-						Liderando la Innovación y Calidad en <br></br>
-						<span className="titulo_kaiser">Desarrollo de Software</span>
+				<div className='flex-1 text-center lg:text-left'>
+					<h1 className='text-2xl md:text-4xl lg:text-5xl font-bold text-white'>
+						Liderando la Innovación y Calidad en <span className='titulo_kaiser block mt-2'>Desarrollo de Software</span>
 					</h1>
-					<p className="py-6 text-white text-[30px]">En Kaiser Soft, nos dedicamos a impulsar tu empresa hacia nuevas oportunidades.</p>
-					<button className="btn btn-primary">Descubre Más</button>
+					<p className='py-6 text-white text-lg md:text-2xl'>
+						En Kaiser Soft, nos dedicamos a impulsar tu empresa hacia nuevas oportunidades.
+					</p>
+					{/* <button className='btn btn-primary w-full sm:w-auto'>Descubre Más</button> */}
 				</div>
 			</div>
 		</div>
