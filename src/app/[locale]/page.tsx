@@ -21,14 +21,14 @@ export default function Home() {
 			<Navbar></Navbar>
 			<Hero></Hero>
 			<main>
-				<SectionDescription></SectionDescription>
-				<SectionServicios></SectionServicios>
-				<SectionProjects></SectionProjects>
+				<SectionDescription />
+				<SectionServicios />
+				{/* <SectionProjects></SectionProjects> */}
 				<SectionTechs />
-				<SectionAboutUs></SectionAboutUs>
-				<SectionTeam></SectionTeam>
+				<SectionAboutUs />
+				<SectionTeam />
 				{/* <SectionUbicacion></SectionUbicacion> */}
-				<SectionContacto></SectionContacto>
+				<SectionContacto />
 			</main>
 
 			<Footer></Footer>
