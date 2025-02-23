@@ -11,14 +11,15 @@ const Map = () => {
 		const map = new mapboxgl.Map({
 			container: mapContainer.current,
 			style: "mapbox://styles/mapbox/streets-v11",
-			center: [-74.08175, 4.60971], // Coordenadas de Bogotá
+			center: [-74.08175, 4.60971],
 			zoom: 6,
+			// add point in bogota
 		});
 
-		return () => map.remove(); // Limpia el mapa al desmontar el componente
+		return () => map.remove();
 	}, []);
 
-	return <div ref={mapContainer} className="map-container shadow-xl rounded" />;
+	return <div ref={mapContainer} className="map-container" />;
 };
 
 export default Map;

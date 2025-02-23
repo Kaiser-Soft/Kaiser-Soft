@@ -7,10 +7,10 @@ html {
 }
 
 .logo_brand {
-	max-width: 50px;
+	max-width: 30px;
 }
 .navbar {
-	/* background: linear-gradient(270deg, #f78573, #9721da); */
+	/* background: rgba(0, 0, 0, 0.212); */
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 }

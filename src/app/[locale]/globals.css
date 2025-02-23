@@ -4,7 +4,7 @@
 
 @font-face {
 	font-family: "Fitgree";
-	src: url("../../public/Fonts/Figtree/static/Figtree-Regular.ttf") format("truetype");
+	src: url("../../../public/Fonts/Figtree/static/Figtree-Regular.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
 	font-family: "Fitgree-Bold";
-	src: url("../../public/Fonts/Figtree/static/Figtree-Bold.ttf") format("truetype");
+	src: url("../../../public/Fonts/Figtree/static/Figtree-Bold.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -33,12 +33,10 @@
 } */
 
 body {
-	font-family: "Figtree";
-	/* font-family: 'Tajawal', sans-serif !important; */
+	font-family: "Figtree", sans-serif; /* Asegúrate de que Figtree soporte caídas a sans-serif en caso de que no se cargue */
 	scroll-behavior: smooth;
-
-	/* background-image: linear-gradient(to right, #aba4ff 0%, #d3d4db 100%); */
-	/* background-image: linear-gradient(to right, #5a3f7c 0%, #2a1e4f 100%); */
+	background-color: hsla(0, 0%, 0%, 1);
+	background-image: radial-gradient(at 91% 95%, hsla(272, 80%, 22%, 1) 0px, transparent 50%), radial-gradient(at 0% 17%, hsla(282, 100%, 10%, 1) 0px, transparent 50%);
 }
 .seccion-cards {
 	display: flex;
@@ -102,7 +100,7 @@ body {
 	/* letter-spacing: -0.05em; */
 }
 .bg-about-us {
-	background-image: url("../../public/illustraciones/bg-1.webp");
+	background-image: url("../../../public/illustraciones/bg-1.webp");
 	position: absolute;
 	width: 100%;
 	background-size: cover;
@@ -114,7 +112,7 @@ body {
 	filter: blur(64px);
 }
 .bg-description {
-	background-image: url("../../public/illustraciones/bg-2.webp");
+	background-image: url("../../../public/illustraciones/bg-2.webp");
 	position: absolute;
 	width: 100%;
 	background-size: cover;
@@ -126,7 +124,7 @@ body {
 	filter: blur(64px);
 }
 .bg-ubicacion {
-	background-image: url("../../public/illustraciones/bg-3.webp");
+	background-image: url("../../../public/illustraciones/bg-3.webp");
 	position: absolute;
 	width: 100%;
 	background-size: cover;
@@ -138,7 +136,7 @@ body {
 	filter: blur(64px);
 }
 .bg-contacto {
-	background-image: url("../../public/illustraciones/bg-4.webp");
+	background-image: url("../../../public/illustraciones/bg-4.webp");
 	position: absolute;
 	width: 100%;
 	background-size: cover;
